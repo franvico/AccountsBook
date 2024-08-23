@@ -23,7 +23,7 @@ return new class extends Migration
             $table->unique(['abook_id', 'name']);
 
             // Foreign keys
-            $table->foreign('abook_id')->references('id')->on('accounts_book')->onDelete('cascade');
+            // $table->foreign('abook_id')->references('id')->on('accounts_book')->onDelete('cascade');
         });
     }
 
